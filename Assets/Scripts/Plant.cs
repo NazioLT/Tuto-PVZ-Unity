@@ -4,11 +4,16 @@
 /// </summary>
 public class Plant : MonoBehaviour
 {
-    private Vector2Int _square;
+    private Vector2Int _position;
 
-    public void Place(Vector2Int square)
+    public void Place(Vector2Int position)
     {
-        _square = square;
-        transform.position = Grid.GridToWorldSpace(square);
+        _position = position;
+        transform.position = Utils.GridToWorldSpace(position);
+    }
+
+    public void Kill()
+    {
+        Destroy(gameObject);
     }
 }
