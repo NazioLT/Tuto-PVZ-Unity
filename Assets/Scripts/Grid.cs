@@ -5,8 +5,6 @@
 /// </summary>
 public class Grid : MonoBehaviour
 {
-    [SerializeField] private Plant _plant = null;
-
     private Plant[,] _squares = new Plant[COLUMN_COUNT, LINE_COUNT];
 
     public const int COLUMN_COUNT = 9;
@@ -14,12 +12,15 @@ public class Grid : MonoBehaviour
 
     public void Select(Vector2Int position)
     {
+        Plant plantToPlace = Deck.Instance.GetPlantToPlace();
+
+        if (plantToPlace == null)
+            return;
+
         Plant plantAtPos = GetPlant(position);
 
         if (plantAtPos == null)
-            PlacePlant(_plant, position);
-        else
-            plantAtPos.Kill();
+            PlacePlant(plantToPlace, position);
     }
 
     private Plant GetPlant(Vector2Int position)
