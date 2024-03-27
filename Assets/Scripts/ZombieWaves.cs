@@ -39,6 +39,6 @@ public class ZombieWaves : MonoBehaviour
 
     private void SpawnZombie()
     {
-        Instantiate(_prefab, Utils.GetRandomZombiePosition(), Quaternion.identity);
+        Instantiate(_prefab, Utils.GetRandomZombiePosition(), Quaternion.Euler(0, -90, 0));
     }
 }

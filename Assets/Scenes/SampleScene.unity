@@ -497,7 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 3772795797615392792, guid: 08147b0df2fb9d04392bfe0aa9c680c0, type: 3}
   _duration: 5
-  _zombiesToSpawn: 3
+  _zombiesToSpawn: 1
 --- !u!4 &704600236
 Transform:
   m_ObjectHideFlags: 0
