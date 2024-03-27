@@ -10,4 +10,11 @@ public static class Utils
                 square.y + 0.5f
             );
     }
+
+    public static Vector3 GetRandomZombiePosition()
+    {
+        return GridToWorldSpace(new Vector2Int(
+            Grid.COLUMN_COUNT + 1,
+            Random.Range(0, Grid.LINE_COUNT)));
+    }
 }

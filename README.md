@@ -7,6 +7,7 @@ Bienvenue dans ce projet tutoriel sur le sujet de refaire un PVZ-Like dans Unity
 - Unity 2022.3.10f1
 - Universal Render Pipeline 14.0.8
 - Input System 1.7.0
+- [[RPG Monster Partners PBR Polyart](https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-partners-pbr-polyart-168251)]
 
 ## Features
 
