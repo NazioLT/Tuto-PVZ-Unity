@@ -5,16 +5,20 @@ public class Zombie : Character
     [SerializeField] private float _speed = 6f;
     [SerializeField] private LayerMask _plantMask = 0;
 
-    private Rigidbody _rigidbody;
+    private Rigidbody _rigidbody = null;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         _rigidbody = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
     {
         bool isPlantForward = Physics.Raycast(_rigidbody.position + Vector3.up * 0.5f, Vector3.left, 1f, _plantMask);
+
+        Animator.SetBool("Attacking", isPlantForward);
 
         if (_rigidbody.position.x < -0.5f || isPlantForward)
             return;
