@@ -2,7 +2,7 @@
 /// <summary>
 /// Script général de la plante, gère les intéractions principales de la plante.
 /// </summary>
-public class Plant : MonoBehaviour
+public class Plant : Character
 {
     private Vector2Int _position;
 
