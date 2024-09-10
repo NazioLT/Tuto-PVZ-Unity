@@ -47,6 +47,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe0ba48c355dbb40a1b515e3d3bd646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackCooldown: 0.5
+  _attackDistance: 6
+  _projectile: {fileID: 1275814029237936404, guid: 1dbd37e4f9c96d8458d3510ef0073ede, type: 3}
+  _zombieMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!54 &9182647692286023750
 Rigidbody:
   m_ObjectHideFlags: 0
